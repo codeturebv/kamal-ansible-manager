@@ -2,15 +2,10 @@
 
 This is an [Ansible](https://www.ansible.com/) playbook to automatically optimize and secure your servers for [Kamal](https://kamal-deploy.org/), for Ubuntu only.
 
-Here's a quick video walkthrough of how this repo works:
-
-[![Watch the video](https://raw.githubusercontent.com/guillaumebriday/kamal-ansible-manager/main/thumbnail.png)](https://www.youtube.com/watch?v=WTYNPCEJSOo)
-
 ## What's inside?
 
 It will automatically update your packages and configure these packages to secure your server(s):
 
-- [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - [Fail2ban](https://github.com/fail2ban/fail2ban)
 - [UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)
 - [NTP](https://ubuntu.com/server/docs/network-ntp)
@@ -24,8 +19,13 @@ The playbook also:
 
 Clone the repo:
 ```bash
-$ git clone git@github.com:guillaumebriday/kamal-ansible-manager.git
+$ git clone git@github.com:codeturebv/kamal-ansible-manager.git
 $ cd kamal-ansible-manager
+```
+
+Install ansible
+```bash
+$ brew install ansible
 ```
 
 Copy the inventory example file:
